@@ -1,10 +1,9 @@
-[![npm (tag)](https://img.shields.io/npm/v/sleepx/alpha?color=green&label=NPM&style=for-the-badge)](https://github.com/thiagodp/sleepx/releases)
-[![License](https://img.shields.io/npm/l/sleepx.svg?style=for-the-badge&color=green)](https://github.com/thiagodp/sleepx/blob/master/LICENSE.txt)
-[![Build Status](https://img.shields.io/github/workflow/status/thiagodp/sleepx/Test?style=for-the-badge)](https://github.com/thiagodp/sleepx/actions)
+[![npm (tag)](https://img.shields.io/npm/v/sleepx?color=green&label=NPM&style=for-the-badge)](https://github.com/thiagodp/sleepx/releases)
+[![License](https://img.shields.io/npm/l/sleepx.svg?style=for-the-badge&color=green)](LICENSE.txt)
 
 # sleepx
 
-> ⏱ Run a sleep-like command in multiple OSes
+> ⏱ Run the same sleep-like command in multiple OSes
 
 - Same syntax as Unix's `sleep`
 - Runs on any OS that NodeJS runs

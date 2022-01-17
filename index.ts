@@ -28,10 +28,14 @@ if ( input === '--help' ) {
 
 } else if ( input === '--version' ) {
 
-    const readFile = require( 'fs' ).readFile;
-    const promisify = require( 'util' ).promisify;
+    const { readFile } = require( 'fs' );
+    const { promisify } = require( 'util' );
+    const { join }  = require( 'path' );
+
     const fread = promisify( readFile );
-    fread( 'package.json' )
+    const file: string = join( __dirname, 'package.json' );
+
+    fread( file )
         .then( function ( value: any ) {
             const obj = JSON.parse( value )
             process.stdout.write( obj.version || '1.0.0' );

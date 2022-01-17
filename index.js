@@ -61,8 +61,10 @@ if (input === '--help') {
 else if (input === '--version') {
     var readFile = require('fs').readFile;
     var promisify = require('util').promisify;
+    var join = require('path').join;
     var fread = promisify(readFile);
-    fread('package.json')
+    var file = join(__dirname, 'package.json');
+    fread(file)
         .then(function (value) {
         var obj = JSON.parse(value);
         process.stdout.write(obj.version || '1.0.0');
