@@ -15,6 +15,9 @@
     "tool"
   ],
   "main": "index.js",
+  "bin": {
+    "sleepx": "index.js"
+  },
   "files": [
     "index.js"
   ],
